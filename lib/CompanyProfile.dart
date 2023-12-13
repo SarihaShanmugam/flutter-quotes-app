@@ -9,7 +9,7 @@ class CompanyProfile extends StatelessWidget {
     return Scaffold(
       drawer: DrawerNavigation(),
       appBar: AppBar(
-        title: Text('Company profile'),
+        title: Text('Company profile',style: TextStyle(fontSize: 25.0,fontWeight: FontWeight.bold,color: Colors.purple),),
       ),
       body: SafeArea(
         child: Center(
@@ -22,7 +22,7 @@ class CompanyProfile extends StatelessWidget {
                   ClipRect(
                     child: SizedBox.fromSize(
                       size: Size.square(40),
-                      child: Image.asset('images/TideLife.jpeg'),
+                      child: Image.asset('images/TideLife.png'),
                     ),
                   ),
                   Padding(
@@ -30,9 +30,9 @@ class CompanyProfile extends StatelessWidget {
                     child: Text(
                       'Tidy Life India Pvt Ltd',
                       style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 25,
                           fontWeight: FontWeight.bold,
-                          backgroundColor: Colors.white),
+                          color: Colors.pink),
                     ),
                   ),
 
@@ -44,7 +44,7 @@ class CompanyProfile extends StatelessWidget {
                   height: 20,
                   width: 200,
                   child: Divider(
-                    color: Colors.cyan,
+                    color: Colors.pink,
                   ),
                 ),
               ),
@@ -55,9 +55,9 @@ class CompanyProfile extends StatelessWidget {
                     color: Colors.blue,
                   ),
                   title: Text(
-                    '+91 8745619053',
+                    '+91 86103 38291',
                     style:
-                        TextStyle(fontSize: 20, backgroundColor: Colors.white),
+                        TextStyle(fontSize: 20, color: Colors.pink),
                   ),
                 ),
               ),
@@ -68,9 +68,9 @@ class CompanyProfile extends StatelessWidget {
                     color: Colors.blue,
                   ),
                   title: Text(
-                    'sarihakkn@gmail.com',
+                    'tidylifeindia@gmail.com',
                     style:
-                        TextStyle(fontSize: 20, backgroundColor: Colors.white),
+                        TextStyle(fontSize: 20, color: Colors.pink),
                   ),
                 ),
               ),
@@ -81,9 +81,9 @@ class CompanyProfile extends StatelessWidget {
                     color: Colors.blue,
                   ),
                   title: Text(
-                    'Neha homes,\nchennai-navalur',
+                    'No A3 Mahalakshmi Flats \n Sivagami Street \n New Perungalathur,\n Chennai, Tamil Nadu 600063 ',
                     style:
-                        TextStyle(fontSize: 20, backgroundColor: Colors.white),
+                        TextStyle(fontSize: 20, color: Colors.pink),
                   ),
                 ),
               )

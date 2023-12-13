@@ -12,7 +12,7 @@ class DisplayImage extends StatelessWidget {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 30),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(30.0),color: Colors.green,image:
+        borderRadius: BorderRadius.circular(30.0),image:
         DecorationImage(image: AssetImage(appDataImage.image),
     fit: BoxFit.cover,
     ),),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_new_app/new_display_image.dart';
 import 'package:my_new_app/new_page_image.dart';
 import 'package:my_new_app/appdata_images.dart';
+import 'package:my_new_app/splash_screen.dart';
 import 'drawer_navigation.dart';
 import 'new_page_image.dart';
 

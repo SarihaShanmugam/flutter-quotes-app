@@ -18,28 +18,40 @@ class _DrawerNavigationState extends State<DrawerNavigation> {
       child: ListView(
         children: [
           UserAccountsDrawerHeader(
-              accountName: Text('Swami Vivekanadas Quotes'),
-              accountEmail: Text('version 1.0'),
-          currentAccountPicture: CircleAvatar(
-            backgroundImage: AssetImage('images/sv1.jpeg'),
-          ),
-          ),
-          ListTile(
-            title: Text ('Quotes text'),
-            onTap: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => NewPageVieww()));
-            },
-
+            accountName: Text('Modern Quotes Library',style: TextStyle(fontSize: 20.0,color: Colors.white),),
+            accountEmail: Text('Version 1.0'),
+            currentAccountPicture: CircleAvatar(
+              backgroundImage: AssetImage('images/p.png'),
+            ),
           ),
           ListTile(
-            title: Text ('Quotes image'),
+            title: Text('Quotes'),
             onTap: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => NewPageImage()));
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => NewPageVieww()));
             },
-
-          )
+          ),
+          ListTile(
+            title: Text('Themes'),
+            onTap: () {
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => NewPageImage()));
+            },
+          ),
+          ListTile(
+            title: Text('My Profile'),
+            onTap: () {
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => MyProfile() ));
+            },
+          ),
+          ListTile(
+            title: Text('Company Profile'),
+            onTap: () {
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => CompanyProfile()));
+            },
+          ),
         ],
       ),
     );

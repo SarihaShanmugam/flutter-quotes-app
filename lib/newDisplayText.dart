@@ -17,7 +17,7 @@ class NewDisplay extends StatelessWidget {
             child: Text(
               newApp.text,
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 20, letterSpacing: 1.5),
+              style: TextStyle(fontSize: 20,color: Colors.pink, letterSpacing: 1.5),
             ),
           ),
         ),
