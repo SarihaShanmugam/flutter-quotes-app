@@ -6,10 +6,10 @@ class AppDataImage {
 }
 
 List<AppDataImage> appDataImage=[
-  AppDataImage('images/m1.jpeg'),
-  AppDataImage('images/m2.jpeg'),
-  AppDataImage('images/m3.jpeg'),
-  AppDataImage('images/m4.jpeg'),
-  AppDataImage('images/m5.jpeg'),
+  AppDataImage('images/b1.png'),
+  AppDataImage('images/b2.png'),
+  AppDataImage('images/b3.png'),
+  AppDataImage('images/b4.png'),
+  AppDataImage('images/b5.png'),
 
 ];

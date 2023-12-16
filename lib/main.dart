@@ -5,6 +5,7 @@ import 'package:my_new_app/appdata_images.dart';
 import 'package:my_new_app/splash_screen.dart';
 import 'drawer_navigation.dart';
 import 'new_page_image.dart';
+import 'newpageView.dart';
 
 
 void main() {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: DrawerNavigation(),
+      home: SplashScreen(),
     );
   }
 }

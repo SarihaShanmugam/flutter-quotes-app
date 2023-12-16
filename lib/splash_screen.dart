@@ -1,4 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'drawer_navigation.dart';
+import 'newpageView.dart';
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -11,6 +15,8 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    Timer(Duration(seconds: 5), () => Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => DrawerNavigation())));
   }
   Widget build(BuildContext context) {
     return Scaffold(

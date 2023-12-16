@@ -10,14 +10,20 @@ class NewDisplay extends StatelessWidget {
     return Center(
       child: Container(
         width: 250,
-        color: Colors.grey,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(25.0),
+            color: Colors.pink
+        ),
+
         child: Center(
+
           child: Padding(
             padding: const EdgeInsets.all(7.0),
             child: Text(
               newApp.text,
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 20,color: Colors.pink, letterSpacing: 1.5),
+              style: TextStyle(fontSize: 20,color: Colors.white,
+                  letterSpacing: 1.5),
             ),
           ),
         ),

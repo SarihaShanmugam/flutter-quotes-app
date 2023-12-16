@@ -10,6 +10,7 @@ class DisplayImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: 350,
       margin: EdgeInsets.symmetric(horizontal: 30),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30.0),image:
