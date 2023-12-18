@@ -18,10 +18,15 @@ class _DrawerNavigationState extends State<DrawerNavigation> {
       child: ListView(
         children: [
           UserAccountsDrawerHeader(
-            accountName: Text('Modern Quotes Library',style: TextStyle(fontSize: 20.0,color: Colors.white),),
+            accountName: Text('Modern Quotes Library',
+              style: TextStyle(fontSize: 17.0,color: Colors.white),
+            ),
             accountEmail: Text('Version 1.0'),
-            currentAccountPicture: CircleAvatar(
-              backgroundImage: AssetImage('images/p.png'),
+            currentAccountPicture: Padding(
+              padding: const EdgeInsets.only(bottom: 8.0),
+              child: CircleAvatar(
+                backgroundImage: AssetImage('images/p.png'),
+              ),
             ),
           ),
           ListTile(
